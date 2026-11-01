@@ -1,0 +1,357 @@
+/* ---------- Základ ---------- */
+:root {
+  --modra: #2563eb;
+  --modra-svetla: #eff4ff;
+  --text: #111827;
+  --text-seda: #6b7280;
+  --pozadie: #f7f8fa;
+  --ramik: #e5e7eb;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--pozadie);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kontajner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Tlačidlá ---------- */
+.tlacidlo {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--modra);
+  border-radius: 10px;
+  background: var(--modra);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tlacidlo-svetle {
+  background: #fff;
+  color: var(--modra);
+  border-color: var(--ramik);
+}
+
+.tlacidlo-male {
+  padding: 6px 14px;
+  font-size: 0.875rem;
+}
+
+/* ---------- Hlavička ---------- */
+.hlavicka {
+  background: #fff;
+  border-bottom: 1px solid var(--ramik);
+}
+
+.hlavicka .kontajner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.logo-ikona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--modra);
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+/* ---------- Hero (úvodná stránka) ---------- */
+.hero {
+  background: linear-gradient(135deg, #dbe7ff, #f3e3c8);
+  padding: 40px 0 24px;
+}
+
+.hero-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.hero-box p {
+  margin: 0 0 4px;
+  color: var(--modra);
+  font-weight: bold;
+}
+
+.hero-box h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.hero-spodok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hero-odkazy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stitok {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* ---------- Hlavný obsah ---------- */
+main {
+  padding: 24px 0 40px;
+}
+
+.nadpis-stranky p {
+  margin: 0;
+  color: var(--modra);
+  font-weight: bold;
+}
+
+.nadpis-stranky h1 {
+  margin: 4px 0;
+  font-size: 2.25rem;
+}
+
+.nadpis-stranky .popis {
+  color: var(--text-seda);
+  margin-bottom: 24px;
+}
+
+/* ---------- Filtre ---------- */
+.filtre {
+  background: #fff;
+  border: 1px solid var(--ramik);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.filtre-hlavicka {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.filtre h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.filtre-hlavicka a {
+  color: var(--modra);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.filtre-polia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.filtre input,
+.filtre select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.filtre-tlacidla {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* ---------- Karty zvierat ---------- */
+.zoznam {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.karta {
+  background: #fff;
+  border: 1px solid var(--ramik);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.karta-vrch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.odznak {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--modra-svetla);
+  color: var(--modra);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.srdce {
+  color: var(--modra);
+  font-size: 1.25rem;
+}
+
+.karta h3 {
+  margin: 10px 0 0;
+  font-size: 1.25rem;
+}
+
+.karta .info {
+  margin: 0 0 14px;
+  color: var(--text-seda);
+}
+
+.karta-spodok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* ---------- Stránka Adopcie: bočný panel + zoznam ---------- */
+.rozlozenie {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.rozlozenie .filtre {
+  margin-bottom: 0;
+}
+
+.rozlozenie .filtre-polia {
+  grid-template-columns: 1fr;
+}
+
+.rozlozenie .filtre-tlacidla {
+  flex-direction: column;
+}
+
+.rozlozenie .zoznam {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ---------- Pätička ---------- */
+.paticka {
+  background: #fff;
+  border-top: 1px solid var(--ramik);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--text-seda);
+  font-size: 0.9rem;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  .filtre-polia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zoznam {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rozlozenie {
+    grid-template-columns: 1fr;
+  }
+
+  .rozlozenie .filtre-polia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rozlozenie .filtre-tlacidla {
+    flex-direction: row;
+  }
+}
+
+/* ---------- Mobil ---------- */
+@media (max-width: 600px) {
+  .hlavicka .kontajner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu .tlacidlo {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-box h1,
+  .nadpis-stranky h1 {
+    font-size: 1.6rem;
+  }
+
+  .filtre-polia,
+  .rozlozenie .filtre-polia,
+  .zoznam,
+  .rozlozenie .zoznam {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-spodok .tlacidlo {
+    width: 100%;
+    text-align: center;
+  }
+}
