@@ -265,6 +265,52 @@ main {
   font-weight: bold;
 }
 
+/* ---------- Správa zvierat (CRUD) ---------- */
+.tlacidlo-cervene {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.karta-akcie {
+  display: flex;
+  gap: 8px;
+}
+
+.karta-akcie form {
+  margin: 0;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 480px;
+  background: #fff;
+  border: 1px solid var(--ramik);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.formular label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.formular input {
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.formular-tlacidla {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
 /* ---------- Stránka Adopcie: bočný panel + zoznam ---------- */
 .rozlozenie {
   display: grid;

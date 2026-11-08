@@ -22,6 +22,7 @@
         </a>
         <nav class="menu" aria-label="Hlavné menu">
             <a href="<?= $link->url('home.adopcie') ?>" class="tlacidlo">♡ Adoptuj</a>
+            <a href="<?= $link->url('animal.index') ?>" class="tlacidlo tlacidlo-svetle">🐾 Zvieratá</a>
             <a href="#" class="tlacidlo tlacidlo-svetle">✋ Dobrovoľník</a>
         </nav>
     </div>
